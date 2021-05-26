@@ -1,0 +1,213 @@
+#app {
+  margin: 0px 50px;
+  position: relative;
+  display: flex;
+  font-family: Arial;
+}
+
+#earnings {
+  position:absolute;
+  top:0;
+  right:0;
+  height: 100px;
+  width: 250px;
+  background: lightblue;
+  text-align: center;
+  font-size: 3.5em;
+  padding-top: 20px;
+}
+
+#instructions {
+  opacity:0.9;
+  background-color:#444444;
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0px;
+  left:0px;
+  z-index:1000;
+  font-family: arial;
+}
+
+#instructions div {
+  margin: 0 auto;
+  width: 60%;
+  margin-top: 150px;
+  color: white;
+}
+
+#instructions h2 {
+  font-size: 50px;
+}
+
+#instructions p {
+  font-size: 30px;
+}
+
+#instructions li {
+  line-height: 1.5;
+}
+
+#instructions button {
+  display: block;
+  margin: 0 auto;
+  height: 50px;
+  width: 100px;
+}
+
+#solve {
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  font-size: 2em;
+  color: white;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.display {
+  height: 100px !important;
+  width: 200px;
+  border: 3px solid black;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px; 
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 5rem;
+  margin: 21px auto;
+  position: absolute;
+  top: 88px;
+  left: 59px;
+  background: white;
+  visibility: hidden;
+}
+
+.left {
+  margin-right: 40px;
+}
+
+.marker {
+  position: absolute;
+  width: 60px;
+  left: 133px;
+  top: 115px;
+  z-index: 1;
+}
+
+.wheel-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.wheel {
+  width: 325px;
+  height: 325px;
+  z-index: 0;
+  border-radius: 1000px;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.row {
+  height: 90px;
+  margin: 20px;
+  display: flex;
+} 
+
+.letter {
+  border: 5px solid black;
+  margin: 5px;
+  height: 90px;
+  width: 70px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 80px;
+}
+
+.space {
+  border: 5px solid white;
+  margin: 5px;
+  height: 90px;
+  width: 70px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 80px;
+}
+
+.choices {
+  visibility: hidden;
+  animation: flash 2s infinite; 
+  padding: 5px;
+}
+
+@keyframes flash {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: grey;
+  }
+}
+
+.consonant-choices {
+  display: flex;
+}
+
+.consonant-choices span {
+  flex: 1 1 0;
+  margin: 5px;
+  display: inline-block;
+  background: yellow;
+  font-size: 3rem;
+  border: 2px solid grey;
+  width: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.vowel-choices {
+  display: flex;
+}
+
+.vowel-choices span {
+  flex: 1 1 0;
+  margin: 5px;
+  display: inline-block;
+  background: orange;
+  font-size: 3rem;
+  border: 2px solid grey;
+  width: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.picture {
+  z-index: 1000;
+  position: fixed;
+  margin: 0;
+  background-color: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  font-family: arial;
+  color: white;
+}
+
+.picture img {
+  width: 400px;
+  border: 4px solid white;
+  margin: 10px;
+}
+
+.picture h2 {
+  text-align: center;
+  font-size: 4em;
+}
+
+.picture div {
+  margin: 0 auto;
+  width: 70%;
+}

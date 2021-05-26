@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wheel of Fortune!</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    window.onload = function () {
+      var e = document.getElementById('instructions');
+      function showPopUpBox() {
+        e.style.display = 'block';
+      }
+      showPopUpBox();
+
+      e.addEventListener('click', function() {
+        e.style.display = 'none'
+      })
+    }
+  </script>
+</head>
+
+<body>
+  <div id="instructions">
+    <div>
+      <h2>Welcome to Wheel of Fortune</h2>
+      <p>To play:</p>
+      <ol>
+        <li>Click the wheel.</li>
+        <li>Choose a consonant (yellow letters).</li>
+        <li>If the letter appears in the puzzle, you earn money!</li>
+        <li>Once you've earned enough money, you can start buying vowels (orange letters). Each vowel costs $250 for every time it appears in the puzzle.</li>
+        <li>If the spinner lands on the red "BANKRUPT" slice, you must start over.</li>
+        <li>At any time, you can click "I would like to solve" if you know what the puzzle says.</li>
+      </ol>
+      <button>Let's go!</button>
+    </div>
+  </div>
+  <div id="earnings">$0</div>
+  <div class="picture">
+    <div>
+      <h2>Baby Warbelow</h2>
+      <img src="profile.jpeg">
+      <img src="gummy_bear.png">
+    </div>
+  </div>
+  <div id="app">
+    <div class="left">
+      <h1>Wheel of Fortune</h1>
+      <h2>Category: Surprises</h2>
+      <br>
+      <img class="marker" src="marker.png" />
+      <div class="wheel-container">
+        <img class="wheel button" src="wheel.png" />
+        <div class="display"></div>
+      </div>
+      <div id="solve">
+        <button>I would like to solve</button>
+      </div>
+    </div>
+    <div class="right">
+      <div class="letters">
+        <div class="row row-1">
+          <div class="letter unsolved" data-letter="B"></div>
+          <div class="letter unsolved" data-letter="A"></div>
+          <div class="letter unsolved" data-letter="B"></div>
+          <div class="letter unsolved" data-letter="Y"></div>
+        </div>  
+        <div class="row row-2">
+          <div class="letter unsolved" data-letter="W"></div>
+          <div class="letter unsolved" data-letter="A"></div>
+          <div class="letter unsolved" data-letter="R"></div>
+          <div class="letter unsolved" data-letter="B"></div>
+          <div class="letter unsolved" data-letter="E"></div>
+          <div class="letter unsolved" data-letter="L"></div>
+          <div class="letter unsolved" data-letter="O"></div>
+          <div class="letter unsolved" data-letter="W"></div>
+        </div>
+        <div class="row row-3">
+          <div class="letter unsolved" data-letter="A"></div>
+          <div class="letter unsolved" data-letter="R"></div>
+          <div class="letter unsolved" data-letter="R"></div>
+          <div class="letter unsolved" data-letter="I"></div>
+          <div class="letter unsolved" data-letter="V"></div>
+          <div class="letter unsolved" data-letter="I"></div>
+          <div class="letter unsolved" data-letter="N"></div>
+          <div class="letter unsolved" data-letter="G"></div>
+        </div>
+        <div class="row row-3">
+          <div class="letter unsolved" data-letter="T"></div>
+          <div class="letter unsolved" data-letter="H"></div>
+          <div class="letter unsolved" data-letter="I"></div>
+          <div class="letter unsolved" data-letter="S"></div>
+          <div class="space"></div>
+          <div class="letter unsolved" data-letter="F"></div>
+          <div class="letter unsolved" data-letter="A"></div>
+          <div class="letter unsolved" data-letter="L"></div>
+          <div class="letter unsolved" data-letter="L"></div>
+        </div>
+      </div>
+      <div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="choices">
+    <div class="consonant-choices">
+      <span class="choice">B</span>
+      <span class="choice">C</span>
+      <span class="choice">D</span>
+      <span class="choice">F</span>
+      <span class="choice">G</span>
+      <span class="choice">H</span>
+      <span class="choice">J</span>
+      <span class="choice">K</span>
+      <span class="choice">L</span>
+      <span class="choice">M</span>
+      <span class="choice">N</span>
+      <span class="choice">P</span>
+      <span class="choice">Q</span>
+      <span class="choice">R</span>
+      <span class="choice">S</span>
+      <span class="choice">T</span>
+      <span class="choice">V</span>
+      <span class="choice">W</span>
+      <span class="choice">X</span>
+      <span class="choice">Y</span>
+      <span class="choice">Z</span>
+    </div>
+    <div class="vowel-choices">
+      <span class="v-choice">A</span>
+      <span class="v-choice">E</span>
+      <span class="v-choice">I</span>
+      <span class="v-choice">O</span>
+      <span class="v-choice">U</span>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
