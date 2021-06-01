@@ -6,15 +6,16 @@
 }
 
 #earnings {
-  position:absolute;
+  /* position:absolute;
   top:0;
-  right:0;
-  height: 100px;
-  width: 250px;
+  right:0; */
+  height: 70px;
+  /* width: 250px; */
   background: lightblue;
   text-align: center;
   font-size: 3.5em;
-  padding-top: 20px;
+  padding-top: 10px;
+  margin-bottom: 15px;
 }
 
 #instructions {
@@ -91,7 +92,7 @@
   position: absolute;
   width: 60px;
   left: 133px;
-  top: 115px;
+  top: 150px;
   z-index: 1;
 }
 
@@ -205,9 +206,30 @@
 .picture h2 {
   text-align: center;
   font-size: 4em;
+  margin-bottom: 5px;
 }
 
 .picture div {
   margin: 0 auto;
   width: 70%;
+  text-align: center;
+}
+
+.fine-print {
+  display: inline-block;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 50%;
+  border: 5px solid black;
+  padding: 30px;
+}
+
+.container li {
+  margin-bottom: 15px;
 }
